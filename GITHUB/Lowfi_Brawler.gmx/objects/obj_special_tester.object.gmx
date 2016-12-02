@@ -48,11 +48,11 @@ hsp_spin_max = 1.4;
 vsp_spin_max = 1.1;
 
 //Dodge
-dodge_frames = 25;
-dodge_speed = .2;
-dodge_fric = .05;
+dodge_frames = 4;
+dodge_speed = .6;
+dodge_fric = 1.5;
 
-hsp_dodge_max = 1.4;
+hsp_dodge_max = 3.6;
 
 //Lunge
 lunge_frames = 25;

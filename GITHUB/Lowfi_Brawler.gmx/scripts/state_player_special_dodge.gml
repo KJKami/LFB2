@@ -19,12 +19,13 @@ if rundust_timer mod rundust_range == 0
 }
 rundust_timer += 1;
 
-if state_timer >= dodge_frames
+if state_timer >= dodge_frames + 10
     state_switch("Idle");
-
-if state_timer > dodge_frames / 2 && state_timer < dodge_frames    
+    
+if state_timer >= dodge_frames
     if special
         state_switch("Special2");
+
         
 var dir = point_direction(0, 0, -image_xscale, 0);
 

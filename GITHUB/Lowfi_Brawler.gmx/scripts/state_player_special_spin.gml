@@ -17,25 +17,12 @@ if image_index  >= 0 && image_index <= 1
     }
 }
 
-if state_timer > spin_frames                 //Placeholder until timer has been set up
+if state_timer > spin_frames
     state_switch("Idle");
 
 
 var dir = point_direction(0,0,move_hor, move_ver);
 
-//show_debug_message(string(move_hor) + " " + string(move_ver));
-
-if state_timer > spin_frames                 //Placeholder until timer has been set up
-    state_switch("Idle");
-
-/*    
-if dir_timer == 0 {
-    dir = random(360);
-    dir_timer = round(sec(random(1)));
-} else {
-    dir_timer --;
-}
-*/
 
 var dir = point_direction(0,0,move_hor, move_ver);
 
